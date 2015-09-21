@@ -157,7 +157,7 @@ li a:hover{
 .footer{
     padding-top: 50px;
     padding-bottom: 20px;
-    width: 139px;
+    width: 111px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -527,6 +527,41 @@ img.desaturate{
     font-size: 16px;
 }
 
+
+/*Project pages*/
+
+.left-content-img img{
+    width: 100%;
+ 
+}
+
+#project-content-wrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#project-content-wrapper > h3{
+    
+    text-transform: uppercase;
+    text-align: center;
+    margin: 25px 0 75px 0;
+    font-size: 40px;
+    
+}
+
+.right-content{
+    font-size: 16px;
+    
+}
+
+.project-link{
+    margin-bottom: 15px;
+}
+
+.project-link:hover{
+    text-decoration: none;
+}
 /*.footer{
     width: 180px;
     margin-left: 10px;
