@@ -2,95 +2,84 @@
 <html>
 
 <head>
-    <meta charset="utf-8"/>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:700italic,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet"      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">    
-    <!-- Latest compiled and minified JavaScript -->
-
+  <meta charset="utf-8" />
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified JavaScript -->
 </head>
 
-<body>
-    <div id= "wrapper">
-    <div id = "sidebar-wrapper">
-        <div class = "side-contents">
-        <div id ="logo">
-            <img src = "images/Logo-op.png" width ="100px;">
-        </div>
-         <ul class = "sidebar-nav">
-            <li class = "nav-item">
-                <a href = "index.html" > Home </a>
-            </li>
-            <li class = "nav-item">
-                <a href = "about.html" > About </a>
-            </li>
-            <li class = "nav-item">
-                <a href = "projects.html"> Projects </a>
-            </li>
-            <li class = "nav-item">
-                <a href = "blog.html"> Blog </a>
-            </li>
-            
-        </ul>
-        
-       
-    <div class = "footer">
-       
-        <a href = "https://github.com/dakong" target = "_blank" class = "fa fa-github-square fa-lg social-media" id = "github"></a>
-        <a href = "https://www.linkedin.com/in/dakong94" target = "_blank" class = "fa fa-linkedin-square fa-lg social-media" id = "linkedin"></a>
-        <a href = "mailto:dakong94@gmail.com" target = "_blank" class = "fa fa-envelope fa-lg social-media" id = "mail"></a>
-        <a href = "myResume.pdf" target = "_blank" class = "fa fa-file-pdf-o fa-lg social-media" id = "resume"></a>
-            
-        
-        
-        
-    </div>
-</div>
+<body id="body-blog">
 
-    </div> <!-- END OF SIDE BAR -->
- 
-    
-     
-    <div id = "projects" class= "container-fluid main-content">
-            
-        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-            <span class="icon-bar-project"></span>
-            <span class="icon-bar-project"></span>
-            <span class="icon-bar-project"></span>
+  <nav class="blog-nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="#">
+          <img src="images/Logo2.png" alt="Logo" width="" />
         </a>
-        
-        
-        
-        
-        <div class = "blog-page">
-            <h2>Blog</h2>
-                <div class = "blog-post">
-                    <h3 class = "blog-title">September 20, 2015 / Pilot</h3>
-                    <p class = "blog-content">This is my website! I built this site as a fun project for myself to get more experience within web development. I will be updating this website in order to help track my progress of learning, and my life in general. In the projects section you will see some of the things that I have worked on. I will be writing new blog posts based on new technologies I learn and new experiences. I hope you enjoy what you see :)  </p>
-                </div>
-            
-                <div class = "blog-post">
-                    <h3 class = "blog-title">August 3, 2015 / Hello Seattle</h3>
-                    <p class = "blog-content">Today was my first time in Seattle. I usually don't travel much, but it is a hobby that I've always wanted to pick up when older. I went as a part of the Amazon Student Brand Ambassador summit. We spent four days in Seattle, all expenses paid, and it was awesome. Although we did spend a lot of the time sitting and listening to the various speakers that Amazon had prepared for us, we got some free time to explore the city. The bar scene in Seattle is lively, and their coffee is the best I've had. I am definitley returning to this city one day. </p>
-                </div>
-            
-        </div>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="blog-page-header">
+  </div>
 
-    
-    </div> <!--End of Project Container -->
-        
-    </div> <!-- End of Wrapper -->   
+  <section class="blog-card">
+    <img src="images/build-website.png" alt="website">
+    <article>
+      <header>
+        <h1>My Website!</h1>
+        <p>Posted: 10/29/15</p>
+      </header>
+      <p>Hey everyone, welcome to my website. I have went through various re-designs of my website and I’m finally going to settle for this one. A lot of the design principles used on this website were from Google Material design. I enjoy the clean and simple
+        interface of Google, and wanted to incorporate some of their design philosophies into my own website.
+      </p>
+      <p>I will continue to update this website as I am in school in order to keep track of my studies and life experiences. I have never been one to write a blog, but recently I have been thinking about the benefits of keeping track of ones life through
+        writing. I think it will be a great way to see the progression of my career as a software engineer.
+      </p>
+      <p>So I hope you all enjoy the future content that gets posted onto this website. I will be adding a projects section sometime in the future, and will be continually adding new functionalities to this website. One of my biggest goals for this website
+        is to incorporate AngularJS and more JavaScript. Stay tuned :)
+      </p>
+      <p>
+        Stay tuned :)
+      </p>
+    </article>
+  </section>
 
-  
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
- 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/javascript.js"></script>
+  <a href="#body-blog">
+    <!--<div id="up-btn"><p>up</p></div>-->
+    <div id="up-btn"><i class="fa fa-chevron-up fa-2x"></i></div>
+
+  </a>
+
+  <footer id="contact">
+    <form>
+      <input id="name" type="text" name="name" placeholder="Name" size="30" />
+      <br />
+      <input id="email" type="text" name="email" placeholder="Email" size="30" />
+      <br />
+      <textarea id="message" name="message" placeholder="Hi, I just wanted to say..." rows="7" cols="30"></textarea>
+      <br />
+      <input type="submit" value="Send">
+    </form>
+
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
 </body>
 
 </html>

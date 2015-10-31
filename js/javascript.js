@@ -1,37 +1,70 @@
 $(document).ready(function() {
-    console.log("Jquery ready!");
-});
 
-/*Function to show hidebar*/
-$('#menu-toggle').click(function(e) {
-    e.preventDefault();
-    $('#wrapper').toggleClass('toggled');
-    $('#menu-toggle').css('background-color', '#343434');
-    $('.icon-bar-project').css('background-color', 'white');
+  $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
 });
-
-/*Function to hide sidebar. It also allows user to click the 
-rest of the page to close the side bar*/
-$('.main-content, #menu-toggle').click(function(e) {
-    if($('#sidebar-wrapper').css('visibility') === 'visible'){
-        e.preventDefault();
-        $('#wrapper').toggleClass('toggled');
-        console.log("SIDEBAR IS VISIBLE");
-        $('#menu-toggle').css('background-color', 'transparent');
-        $('.icon-bar-project').css('background-color', '#343434');
-   
-    }
 });
 
 
 /*PROJECT HOVERS*/
-$('.project-box').hover(function(e){
-    e.preventDefault();
-    $(this).children('.project-box-content').stop().fadeIn("1000");
-    $(this).css('background','hidden');
-    
-},function(e){
-    e.preventDefault();
-    $(this).children('.project-box-content').stop().fadeOut("1000");
+$('.project-box').hover(function(e) {
+  e.preventDefault();
+  $(this).children('.project-box-content').stop().fadeIn("1000");
+  $(this).css('background', 'hidden');
+
+}, function(e) {
+  e.preventDefault();
+  $(this).children('.project-box-content').stop().fadeOut("1000");
 });
 
+
+$(document).scroll(function() {
+
+  var scrollTop = $(this).scrollTop();
+
+  if (scrollTop > 100) {
+
+    //$('nav').css({"background":"#19ACD1"});
+    $('nav').css({
+      "background": "#00bcd4"
+    });
+    $('nav').css({
+      "box-shadow": "4px 4px 4px rgba(120, 120, 120, 0.3)"
+    });
+
+
+  } else {
+    $('nav').css({
+      "background": "transparent"
+    });
+    $('nav').css({
+      "box-shadow": "none"
+    });
+  }
+
+});
+
+
+$(document).scroll(function(e) {
+  var landing = $('#landing');
+  var cloud = $('.cloud');
+  var cloudContainer = $('#cloud-container');
+  /*
+  var landing = document.getElementById("landing");
+  var cloud = document.getElementsByClassName("cloud");
+  var cloudContainer = document.getElementById("cloud-container");
+  */
+  var distance = landing.outerHeight() - 150;
+  var position = $(this).scrollTop() / landing.innerHeight() * distance;
+
+  console.log(landing.outerHeight());
+
+  cloud.css('top', position);
+
+
+
+
+});

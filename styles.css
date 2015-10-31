@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif !important;
+  background-color: #eeeeee !important; }
+
+nav {
+  z-index: 100;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  transition: 0.1s all ease; }
+  nav .nav-container {
+    margin: 0 5%; }
+    nav .nav-container .nav-left {
+      float: left; }
+      nav .nav-container .nav-left img {
+        margin-top: 15px;
+        width: 40px; }
+    nav .nav-container .nav-right {
+      float: right; }
+      nav .nav-container .nav-right ul.nav-links {
+        line-height: 75px; }
+        nav .nav-container .nav-right ul.nav-links li {
+          display: inline;
+          margin: 0 10px;
+          list-style-type: none; }
+          nav .nav-container .nav-right ul.nav-links li .nav-link {
+            color: white; }
+            nav .nav-container .nav-right ul.nav-links li .nav-link:hover {
+              text-decoration: none;
+              color: #c4c5c6; }
+            nav .nav-container .nav-right ul.nav-links li .nav-link:focus {
+              text-decoration: none; }
+
+.nav a {
+  color: white; }
+
+#home {
+  height: 100%;
+  height: 100vh;
+  /*background: url(images/black.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/ }
+
+#landing {
+  margin: 0;
+  padding: 0;
+  height: 75%;
+  overflow-y: scroll;
+  /*background-color: black;*/
+  /*background-color: #2EB8E6;*/
+  overflow: hidden;
+  background: url("images/black.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: 4px 4px 4px rgba(120, 120, 120, 0.3); }
+
+#landing > h1 {
+  font-size: 46px;
+  color: white;
+  position: absolute;
+  width: 350px;
+  left: 50%;
+  top: 150px;
+  text-align: center;
+  margin-left: -175px;
+  transition: 0.1s all ease;
+  font-weight: 600; }
+  @media only screen and (max-width: 47.9375em) {
+    #landing > h1 {
+      display: none; } }
+
+#cloud-right {
+  float: right; }
+
+#cloud-left {
+  margin-top: 10%;
+  float: left; }
+
+.cloud {
+  z-index: 1;
+  position: relative; }
+
+#cloud-container {
+  max-width: 1200px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%; }
+
+#my-profile {
+  z-index: 2;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -160px;
+  position: relative; }
+
+#footer {
+  margin-top: 25px;
+  text-align: center; }
+
+.fa:hover {
+  text-decoration: none; }
+
+.fa:focus {
+  text-decoration: none;
+  color: dimgray; }
+
+.fa {
+  color: dimgray; }
+
+.icon {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+.icon-right {
+  margin-left: 5px; }
+
+.icon-left {
+  margin-right: 5px; }
+
+#about {
+  width: 75%;
+  max-width: 600px;
+  margin: 0 auto 125px;
+  line-height: 1.5;
+  text-align: center; }
+
+#about > p {
+  margin-top: 25px;
+  font-size: 14px; }
+
+#about > h1 {
+  font-size: 42px;
+  display: inline-block; }
+
+.info > img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 125px;
+  display: block; }
+
+@media only screen and (max-width: 47.9375em) {
+  .col-sm-4 {
+    margin-bottom: 75px; } }
+
+.info > h1 {
+  font-size: 22px;
+  text-align: center; }
+
+.row-content {
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 250px;
+  text-align: center; }
+
+.row-content > p > span {
+  font-weight: bold; }
+
+.row-content > .left-content {
+  display: inline-block;
+  text-align: left;
+  margin-right: 5px;
+  font-weight: bold; }
+
+.row-content p {
+  margin-bottom: 0; }
+
+.row-content > .right-content {
+  display: inline-block;
+  text-align: left;
+  margin-left: 5px; }
+
+#experiences {
+  max-width: 1200px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 175px;
+  margin-top: 125px; }
+
+@media (max-width: 768px) {
+  .col-first {
+    margin-bottom: 50px; } }
+/*** Footer ***/
+footer {
+  background-color: #0277bb;
+  box-shadow: 4px -4px 4px rgba(120, 120, 120, 0.3);
+  height: 350px; }
+
+form {
+  padding-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  display: block; }
+
+input,
+textarea {
+  display: table;
+  width: 250px;
+  border: none;
+  border-radius: 2px;
+  padding-left: 5px; }
+
+input:nth-last-child(1) {
+  color: white;
+  background-color: #e04343; }
+  input:nth-last-child(1):hover {
+    transition: 0.1s all ease;
+    background-color: #cc2e2e; }
+
+textarea:focus,
+input:focus {
+  outline: 0; }
+
+/*==============BLOG PAGE==============*/
+nav.blog-nav {
+  position: absolute; }
+
+body#body-blog {
+  background-color: #c4c5c6; }
+
+.blog-page-header {
+  height: 125px;
+  background-color: #00bcd4;
+  box-shadow: 4px 4px 4px rgba(120, 120, 120, 0.3); }
+
+.blog-card {
+  margin: -50px auto 50px;
+  height: 100%;
+  width: 75%;
+  max-width: 750px;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(120, 120, 120, 0.3);
+  border-radius: 2px; }
+  .blog-card img {
+    display: block;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px; }
+  .blog-card article {
+    width: 65%;
+    margin: 50px auto; }
+    .blog-card article p {
+      font-size: 12px; }
+    .blog-card article header {
+      margin-bottom: 25px; }
+
+#up-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #1eb494;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  border: none;
+  box-shadow: 4px 4px 4px rgba(120, 120, 120, 0.3);
+  color: white;
+  line-height: 60px;
+  text-align: center; }
+  #up-btn i.fa-chevron-up {
+    color: white; }
+  #up-btn p {
+    text-align: center;
+    line-height: 56px;
+    font-size: 18px;
+    text-transform: uppercase; }
+  #up-btn:hover {
+    background-color: #20a284;
+    transition: 0.1s all ease; }
+  #up-btn:focus {
+    text-decoration: none;
+    border: none;
+    outline: 0; }
+
+/*# sourceMappingURL=styles.css.map */

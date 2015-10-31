@@ -2,83 +2,139 @@
 <html>
 
 <head>
-    <meta charset="utf-8"/>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:700italic,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet"      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-
+  <meta charset="utf-8" />
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified JavaScript -->
 </head>
 
 <body>
-    <div id= "wrapper">
-    <div id = "sidebar-wrapper">
-
-        <div class = "side-contents">
-        <div id ="logo">
-            <img src = "images/Logo-op.png" width ="100px;">
-        </div>
-         <ul class = "sidebar-nav">
-            <li class = "nav-item">
-                <a href = "index.html" > Home </a>
-            </li>
-            <li class = "nav-item">
-                <a href = "about.html" > About </a>
-            </li>
-            <li class = "nav-item">
-                <a href = "projects.html"> Projects </a>
-            </li>
-            <li class = "nav-item">
-                <a href = "blog.html"> Blog </a>
-            </li>
+  <nav class="nav-home">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="#">
+          <img src="images/Logo2.png" alt="Logo" width="" />
+        </a>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li>
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
 
         </ul>
-
-
-    <div class = "footer">
-
-        <a href = "https://github.com/dakong" target = "_blank" class = "fa fa-github-square fa-lg social-media" id = "github"></a>
-        <a href = "https://www.linkedin.com/in/dakong94" target = "_blank" class = "fa fa-linkedin-square fa-lg social-media" id = "linkedin"></a>
-        <a href = "mailto:dakong94@gmail.com" target = "_blank" class = "fa fa-envelope fa-lg social-media" id = "mail"></a>
-        <a href = "myResume.pdf" target = "_blank" class = "fa fa-file-pdf-o fa-lg social-media" id = "resume"></a>
-
-
-
-
+      </div>
     </div>
-</div>
-    </div> <!-- END OF SIDE BAR -->
+  </nav>
 
 
-
-    <div id = "home" class= "container-fluid main-content">
-
-        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </a>
-        <div id = "my-name">
-            <h1>Daniel Kong</h1>
+  <section id="home">
+    <div id="landing">
+      <h1>Hello World!</h1>
+      <div id="cloud-container">
+        <div id="cloud-left" class="cloud">
+          <img alt="Cloud" src="images/cloud.png" width="200px">
         </div>
-
+        <div id="cloud-right" class="cloud">
+          <img alt="Cloud" src="images/cloud.png" width="200px">
+        </div>
+      </div>
 
     </div>
-
-    <!--End of Home Container -->
-
+    <div id="my-profile">
+      <img alt="DK" src="images/DK-Circle.png" width="250px">
     </div>
 
+  </section>
 
+  <section id="about">
+    <h1>About Me</h1>
+    <p id="about">My name is Daniel Kong, and I am currently striving to become a Front End Engineer. I live in sunny San Diego, and on my free time I enjoy building websites with nice user interfaces or playing video games. This site was a project I decided build in order to showcase my experiences. I still have a lot to learn in this field, and I hope to track my progress within this website.
+    </p>
+  </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <section id="experiences">
+    <div class="row">
+<div class="col-sm-4">        <div class="info">
+          <img src="images/icons/Education-Hex.png">
+          <h1>Education</h1>
+          <div class="row-content">
+            <p>I am pursuing a B.S in Computer Science, with a Business minor at UC San Diego. My upper division GPA is 3.07, and I am expected to graduate in 2017.
+              <!--
+            <p>
+              <span>-</span> UC San Diego</p>
+            <p>
+              <span>-</span> Computer Science Major</p>
+            <p>
+              <span>-</span> Business Minor</p>
+            <p>
+              <span>- </span> 2017</p>-->
+          </div>
+        </div>
+      </div>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/javascript.js"></script>
+      <div class="col-sm-4">
+        <div class="info">
+          <img src="images/icons/WorkExperience-Hex.png">
+          <h1>Experience</h1>
+          <div class="row-content">
+            <p>I am currently working as a Web Developer for UCSD Publications, as well as a Student Ambassador for Amazon.
+              <!--
+            <p>
+              <span>-</span> Web Developer at UCSD Publications</p>
+            <p>
+              <span>-</span> Brand Ambassador at Amazon</p>-->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="info">
+          <img src="images/icons/Toolkit-Hex.png">
+          <h1>Toolkit</h1>
+          <div class="row-content">
+            <p>My toolkit consists for HTML, CSS, and JavaScript. I am also knowledgeable in languages such as Java and C++.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <form action="http://formspree.io/dakong94@gmail.com" method="POST">
+      <input id="name" type="text" name="name" placeholder="Name" size="30" />
+      <br />
+      <input id="email" type="text" name="_replyto" placeholder="Email" size="30" />
+      <br />
+      <textarea id="message" name="message" placeholder="Hi, I just wanted to say..." rows="7" cols="30"></textarea>
+      <br />
+      <input type="submit" value="Send">
+    </form>
+
+  </footer>
+
+  <!--
+    <div id = "footer">
+        <a href = "https://github.com/dakong" target = "_blank" class = "fa fa-github-square fa-2x social-media icon-left" id = "github"></a>
+        <a href = "https://www.linkedin.com/in/dakong94" target = "_blank" class = "fa fa-linkedin-square fa-2x social-media icon" id = "linkedin"></a>
+        <a href = "mailto:dakong94@gmail.com" target = "_blank" class = "fa fa-envelope fa-2x social-media icon" id = "mail"></a>
+        <a href = "myResume.pdf" target = "_blank" class = "fa fa-file-pdf-o fa-2x social-media icon-right" id = "resume"></a>
+    </div>-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js/javascript.js"></script>
 </body>
 
 </html>
