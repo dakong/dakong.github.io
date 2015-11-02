@@ -261,8 +261,9 @@ body#body-blog {
   border-radius: 50%;
   background-color: #1eb494;
   position: fixed;
+  display: none;
   right: 20px;
-  bottom: 20px;
+  bottom: 28px;
   z-index: 100;
   border: none;
   box-shadow: 4px 4px 4px rgba(120, 120, 120, 0.3);

@@ -8,6 +8,73 @@ $(document).ready(function() {
 });
 });
 
+$(document).scroll(function(){
+  /*console.log($(document).height());
+  console.log($('#contact').height());*/
+
+  var scrollHeight = $(document).height() - $('#contact').height();
+  var btnPos = $('#up-btn').offset().top;
+  var scrollTop = $(window).scrollTop();
+  var documentSize = $(document).height();
+  var windowSize = $(window).height();
+  var topSpace = btnPos - scrollTop;
+  var bottomSpace = windowSize - topSpace;
+  if(scrollTop < 75){
+    $('#up-btn').css({
+      display: 'none'
+    });
+  }
+  else{
+    $('#up-btn').css({
+      display: 'block'
+    });
+  }
+  /*console.log("bottomSpace: " + bottomSpace);
+  console.log("topSpace: " + topSpace);
+  console.log("scrollTop: " + scrollTop);
+  console.log("button Position: " + btnPos);
+  console.log("scrollHeight: " + scrollHeight);
+  console.log("documentSize: " + documentSize);
+  console.log("windowSize: " + windowSize);*/
+
+  if(btnPos + 28 > scrollHeight){
+    $('#up-btn').css({
+      position: 'relative',
+      float: 'right',
+      bottom: '28px'
+    });
+  }
+  else if (bottomSpace < 76){
+    $('#up-btn').css({
+      position: 'fixed',
+      float: 'none'
+    });
+  }
+
+});
+
+/*$(document).scroll(function(){
+  console.log($('#up-btn').offset());
+  console.log($('#contact').offset());
+  
+  var scrollTop = $(this).scrollTop();
+  var btnPos = $('#up-btn').offset().top;
+  var contactPos = $('#contact').offset().top;
+  var range = btnPos - contactPos;
+
+  console.log("contactPos: " + contactPos);
+  console.log("scrollTop: " + scrollTop);
+  console.log("range: " + range);
+  if(range > -25)
+  {
+    $('#up-btn').css({position: 'absolute'});
+    console.log('POSITION REACHED');
+  }
+  else{
+    $('#up-btn').css({position: 'fixed'});
+  }
+});*/
+
 
 /*PROJECT HOVERS*/
 $('.project-box').hover(function(e) {
