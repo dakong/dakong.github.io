@@ -43,36 +43,37 @@ nav {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/ }
-
-#landing {
-  margin: 0;
-  padding: 0;
-  height: 75%;
-  overflow-y: scroll;
-  /*background-color: black;*/
-  /*background-color: #2EB8E6;*/
-  overflow: hidden;
-  background: url("images/background.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  box-shadow: 4px 4px 4px rgba(120, 120, 120, 0.3); }
-
-#landing > h1 {
-  font-size: 46px;
-  color: white;
-  position: absolute;
-  width: 350px;
-  left: 50%;
-  top: 150px;
-  text-align: center;
-  margin-left: -175px;
-  transition: 0.1s all ease;
-  font-weight: 600; }
-  @media only screen and (max-width: 47.9375em) {
-    #landing > h1 {
-      display: none; } }
+  #home #landing {
+    margin: 0;
+    padding: 0;
+    height: 75%;
+    overflow-y: scroll;
+    /*background-color: black;*/
+    /*background-color: #2EB8E6;*/
+    overflow: hidden;
+    background: url("images/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: 4px 4px 4px rgba(120, 120, 120, 0.3); }
+    #home #landing h1 {
+      font-size: 46px;
+      color: white;
+      position: absolute;
+      width: 350px;
+      left: 50%;
+      top: 150px;
+      text-align: center;
+      margin-left: -175px;
+      transition: 0.1s all ease;
+      font-weight: 600; }
+      @media only screen and (max-width: 47.9375em) {
+        #home #landing h1 {
+          display: none; } }
+  #home #my-profile img {
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgba(120, 120, 120, 0.3); }
 
 #cloud-right {
   float: right; }
@@ -147,7 +148,7 @@ nav {
 
 @media only screen and (max-width: 47.9375em) {
   .col-sm-4 {
-    margin-bottom: 75px; } }
+    margin-bottom: 125px; } }
 
 .info > h1 {
   font-size: 22px;
