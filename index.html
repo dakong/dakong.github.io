@@ -107,14 +107,27 @@
   </section>
 
   <footer id="contact">
-    <form action="http://formspree.io/dakong94@gmail.com" method="POST">
-      <input id="name" type="text" name="name" placeholder="Name" size="30" />
+    <h1>Contact Me </h1>
+
+    <form>
+      <div class ="row-content">
+        <label class="default-label">Name</label>
+        <input class="form-input" id="name" type="text" name="name" placeholder="Name" size="30" />
+      </div>
+
+        <div class="row-content">
+        <label class="default-label">Email</label>
+        <input class="form-input" id="email" type="text" name="email" placeholder="Email" size="30" />
+      </div>
+
+
+        <div class="textarea-content row-content ">
+        <label class="default-label">Message</label>
+        <textarea class="form-input" id="message" name="message" placeholder="Hi, I just wanted to say..." rows="5" cols="30"></textarea>
+      </div>
+
       <br />
-      <input id="email" type="text" name="_replyto" placeholder="Email" size="30" />
-      <br />
-      <textarea id="message" name="message" placeholder="Hi, I just wanted to say..." rows="7" cols="30"></textarea>
-      <br />
-      <input type="submit" value="Send">
+      <input id="submit-btn" type="submit" value="Send">
     </form>
 
   </footer>

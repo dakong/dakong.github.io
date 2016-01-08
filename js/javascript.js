@@ -67,6 +67,25 @@ $(document).ready(function() {
     }
   }
 
+  var formInputs = $('.form-input');
+  //too add an event listener to the array, you must loop through it
+  for(var i = 0, len = formInputs.length; i < len; i++){
+    formInputs[i].addEventListener("keyup", function(){
+      if(this.value != ""){
+        $(this).prev().addClass('text-received');
+        //$(this).prev().removeClass('default-label');
+      }
+      else{
+        $(this).prev().removeClass('text-received');
+      }
+    });
+  }
+
+
+
+
+
+
   /*function gradientFader(){
     var landing = $('#landing');
     $(document).scroll(function() {
