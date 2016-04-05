@@ -83,9 +83,6 @@ $(document).ready(function() {
 
 
 
-
-
-
   /*function gradientFader(){
     var landing = $('#landing');
     $(document).scroll(function() {
