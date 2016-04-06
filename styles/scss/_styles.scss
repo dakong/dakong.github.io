@@ -2,6 +2,7 @@
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif !important;
   background-color: #eeeeee !important;
+  font-size: 18px;
 }
 nav {
   z-index: 100;
@@ -32,9 +33,6 @@ nav {
             nav .nav-container .nav-right ul.nav-links li .nav-link:focus {
               text-decoration: none; }
 
-#home {
-
-}
   #home #landing {
     margin: 0;
     padding: 0;
@@ -46,7 +44,7 @@ nav {
     #home-header{
       position: relative;
       width: 400px;
-      top: 150px;
+      top: 125px;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
@@ -58,8 +56,8 @@ nav {
       }
       p{
         margin-top: 15px;
-        color: $orange;
-        font-size: 18px;
+        color: $salmon;
+        font-size: 24px;
 
       }
     }
@@ -132,10 +130,10 @@ nav {
 
 .fa:focus {
   text-decoration: none;
-  color: dimgray; }
+  color: 'dimgray'; }
 
 .fa {
-  color: dimgray; }
+  color: 'dimgray'; }
 
 .icon {
   margin-left: 5px;
@@ -147,22 +145,25 @@ nav {
 .icon-left {
   margin-right: 5px; }
 
+.section-title{
+  color: $orange;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 #about{
-
-  width: 75%;
+  width: 90%;
   max-width: 600px;
   margin: 0 auto 125px;
   line-height: 1.5;
   text-align: center;
-  h1{
-    margin-top: 100px;
-    color: $orange;
-    font-size: 24px;
-
+  .section-title{
+    margin-top: 125px;
   }
 
-  h1.speech{
+
+  /*h1.speech{
     font-size: 24px;
 
     margin-left: auto;
@@ -196,60 +197,115 @@ nav {
   	border: 15px solid;
   	border-color: rgb(225,225,225) transparent transparent rgb(225,225,225);
 
-  }
+  }*/
 
   p{
-    margin-top: 15px;
-    font-size: 14px;
+    margin-top: 25px;
+    font-size: 18px;
   }
 }
 
 .info > img {
   margin-left: auto;
   margin-right: auto;
-  width: 125px;
+  width: 170px;
   display: block; }
 
-@media only screen and (max-width: 47.9375em) {
+@media #{$lt-768} {
   .col-sm-4 {
     margin-bottom: 125px; } }
 
-.info > h1 {
-  font-size: 22px;
-  text-align: center; }
 
-.row-content {
-  font-size: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  max-width: 250px;
-  text-align: center; }
-
-.row-content > p > span {
-  font-weight: bold; }
-
-.row-content > .left-content {
-  display: inline-block;
-  text-align: left;
-  margin-right: 5px;
-  font-weight: bold; }
-
-.row-content p {
-  margin-bottom: 0; }
-
-.row-content > .right-content {
-  display: inline-block;
-  text-align: left;
-  margin-left: 5px; }
 
 #experiences {
+
   max-width: 1200px;
-  width: 75%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 175px;
-  margin-top: 125px; }
+  margin-bottom: 125px;
+  margin-top: 125px;
+
+  .info{
+    h1 {
+      margin-top: 20px;
+      font-size: 24px;
+      text-align: center;
+      color: $orange;
+    }
+
+    .row-content {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      width: 90%;
+      max-width: 300px;
+      text-align: center;
+      p{
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+      span{
+        font-weight: bold;
+      }
+    }
+  }
+
+}
+
+#projects{
+  height: 800px;
+  overflow: auto;
+  height: 100%;
+  .project-item{
+    max-width: 1200px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+
+    .project-image{
+      width: 50%;
+      margin-top: 20px;
+
+      float:left;
+      img{
+        width: 100%;
+        max-width: 600px;
+      }
+    }
+    .project-description{
+      width: 50%;
+      float:left;
+
+      h1{
+        font-size: 24px;
+        color: $orange;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+
+  .left{
+    .project-description{
+      padding-left: 25px;
+    }
+  }
+  .right{
+    .project-description{
+      padding-right: 25px;
+    }
+  }
+}
+
+.clearfix:after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
 
 @media (max-width: 768px) {
   .col-first {
@@ -273,7 +329,8 @@ form {
   padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 250px;
+  width: 80%;
+  max-width: 450px;
   display: block;
     .row-content{
       height: 40px;
@@ -306,7 +363,7 @@ form {
       color: rgba(0,0,0,.87);
       background-color: #eeeeee;
       display: table;
-      width: 250px;
+      width: 100%;
       border: none;
       padding: 5px;
       border-bottom: 1px #bdbdbd solid;
@@ -315,7 +372,7 @@ form {
 
     #submit-btn {
       color: white;
-      background-color: #e04343;
+      background-color: rgb(214, 89, 89);
       border-bottom: 0px;
       width: 75px;
       margin-bottom: 25px;
@@ -324,10 +381,7 @@ form {
         background-color: #cc2e2e;
       }
     }
-
 }
-
-
 
 textarea:focus,
 input:focus {
