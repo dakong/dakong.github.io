@@ -30,9 +30,9 @@
           <li>
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li>
+          <!--<li>
             <a class="nav-link" href="blog.html">Blog</a>
-          </li>
+          </li> -->
           <li>
             <a class="nav-link" href="#contact">Contact</a>
           </li>
@@ -46,7 +46,7 @@
       <div id="home-header">
 
         <h1>Daniel Kong</h1>
-        <p>Web &amp; Software Developer built in San Diego, CA</p>
+        <p>Web &amp; Software Developer crafted in San Diego, CA</p>
 
       </div>
       <div id="cloud-container">
@@ -64,10 +64,12 @@
     </div>
   </section>
 
-
-
   <section id="about">
-    <h1 class="section-title">About me </h1>
+    <header class="section-title">
+      <h1>About Me</h1>
+      <div class="line-sep"></div>
+    </header>
+
     <!--<h1>About Me</h1>-->
     <p id="about">My name is Daniel Kong, and I am currently striving to become a Front End Engineer. I live in sunny San Diego, and on my free time I enjoy building websites with nice user interfaces or playing video games. This site was a project I decided build
       in order to showcase my experiences. I still have a lot to learn in this field, and I hope to track my progress within this website.
@@ -118,39 +120,70 @@
   </section>
 
   <section id="projects">
-    <h1 class="section-title">Projects</h1>
+    <header class="section-title">
+      <h1>Projects</h1>
+      <div class="line-sep"></div>
+    </header>
 
     <div class="project-item left clearfix">
       <div class="project-image">
         <img src="images/project-photos/ucsd-ubn.png">
+        <div class="image-overlay">
+          <a href = "http://ubn.ucsd.edu">
+            <div class="view-project">
+              <p>View Project</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="project-description">
         <h1>UBN Website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Built with: MiddleMan, JS, SCSS, HTML5.</h2>
+        <p>Built and designed the UC San Diego's Undergraduate Business Network’s website. I developed everything from the mockups and wireframes, to the HTML templates and JavaScript code. Currently I am using the MiddleMan framework to generate the static pages throughout the site.</p>
       </div>
     </div>
 
     <div class="project-item right clearfix">
       <div class="project-description">
         <h1>Emissary</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Built with: JS, JQuery, HandlebarsJS, MongoDB, NodeJS, HTML5, CSS.</h2>
+        <p>I was the front end lead for a team of 15 students that created a web application that streamlined a business’s check in process for receptionist's to use. Our team developed for a specific client that would sell it to other businesses. Our final project was ranked #1 by the professor.</p>
       </div>
       <div class="project-image">
         <img src="images/project-photos/emissary-visitors.png">
+        <div class="image-overlay">
+          <a href = "http://webstormtroopers.herokuapp.com">
+            <div class="view-project">
+              <p>View Project</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="project-item left clearfix">
       <div class="project-image">
         <img src="images/project-photos/virtue-vice.png">
+        <div class="image-overlay">
+          <a href = "http://virtue-vice.herokuapp.com">
+            <div class="view-project">
+              <p>View Project</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="project-description">
         <h1>Virtue &amp; Vice</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Built with: JS, HandlebarsJS, HTML5, SCSS, NodeJS, Parse, One Signal API.</h2>
+        <p>Worked in a team of 5 to develop a web application that would help users keep their habits in line. It is a simple CRUD application, that allows users to add, delete, and edit habits. When users input their habits they can keep specify the days,  time of day, and frequency, for that habit. It is connected with the One Signal API for notifications.</p>
       </div>
     </div>
 
-
+    <a style="text-decoration: none" href= "resume.pdf" target="_blank">
+      <div class='resume-button'>
+        <p>View Resume</p>
+      </div>
+    </a>
 
   </section>
 

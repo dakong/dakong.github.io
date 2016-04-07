@@ -209,52 +209,25 @@ nav .nav-container .nav-right ul.nav-links li .nav-link:focus {
   margin-right: 5px; }
 
 .section-title {
-  color: #db4c3f;
-  font-size: 42px;
-  text-align: center;
   margin-bottom: 50px; }
+  .section-title h1 {
+    color: #db4c3f;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .section-title .line-sep {
+    background-color: #485565;
+    width: 40px;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto; }
 
 #about {
   width: 90%;
   max-width: 600px;
   margin: 0 auto 125px;
   line-height: 1.5;
-  text-align: center;
-  /*h1.speech{
-    font-size: 24px;
-
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    width: 200px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-
-    background-color: rgb(225,225,225);
-    border: 0px solid #666;
-
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-
-    -webkit-box-shadow: 2px 2px 4px #888;
-    -moz-box-shadow: 2px 2px 4px #888;
-    box-shadow: 2px 2px 4px #888;
-  }
-
-  h1.speech:after
-  {
-  	content: ' ';
-  	position: absolute;
-  	width: 0;
-  	height: 0;
-  	left: 30px;
-  	top: 100px;
-  	border: 15px solid;
-  	border-color: rgb(225,225,225) transparent transparent rgb(225,225,225);
-
-  }*/ }
+  text-align: center; }
   #about .section-title {
     margin-top: 125px; }
   #about p {
@@ -298,7 +271,8 @@ nav .nav-container .nav-right ul.nav-links li .nav-link:focus {
 #projects {
   height: 800px;
   overflow: auto;
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 100px; }
   #projects .project-item {
     max-width: 1200px;
     width: 90%;
@@ -308,22 +282,71 @@ nav .nav-container .nav-right ul.nav-links li .nav-link:focus {
     #projects .project-item .project-image {
       width: 50%;
       margin-top: 20px;
-      float: left; }
+      float: left;
+      overflow: hidden;
+      position: relative; }
       #projects .project-item .project-image img {
         width: 100%;
         max-width: 600px; }
+      #projects .project-item .project-image .image-overlay {
+        background: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: none; }
+        #projects .project-item .project-image .image-overlay .view-project {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          border: white 3px solid;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 10px 20px; }
+          #projects .project-item .project-image .image-overlay .view-project:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: 0.2s all ease-in-out; }
+          #projects .project-item .project-image .image-overlay .view-project p {
+            font-size: 28px;
+            color: white;
+            text-align: center;
+            vertical-align: center;
+            opacity: 1; }
     #projects .project-item .project-description {
       width: 50%;
       float: left; }
       #projects .project-item .project-description h1 {
         font-size: 24px;
         color: #db4c3f; }
+      #projects .project-item .project-description h2 {
+        font-size: 18px;
+        color: #485565; }
       #projects .project-item .project-description p {
         font-size: 18px; }
   #projects .left .project-description {
     padding-left: 25px; }
   #projects .right .project-description {
     padding-right: 25px; }
+  #projects .resume-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 50px;
+    border: #485565 2px solid; }
+    #projects .resume-button p {
+      font-size: 18px;
+      color: #485565;
+      text-align: center;
+      line-height: 50px; }
+    #projects .resume-button:hover {
+      background-color: #485565;
+      transition: 0.2s all ease-in-out; }
+    #projects .resume-button:hover p {
+      color: white;
+      transition: 0.2s all ease-in-out; }
 
 .clearfix:after {
   content: " ";
@@ -336,10 +359,11 @@ nav .nav-container .nav-right ul.nav-links li .nav-link:focus {
     margin-bottom: 50px; } }
 /*** Footer ***/
 footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
   position: relative;
   box-shadow: 4px -4px 4px rgba(120, 120, 120, 0.3); }
   footer h1 {
-    padding-top: 35px;
     text-align: center; }
   footer form {
     padding-top: 10px;

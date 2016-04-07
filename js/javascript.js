@@ -35,7 +35,6 @@ $(document).ready(function() {
     }
   }
 
-
   function navScroller(){
     $(document).scroll(function() {
       var scrollTop = $(this).scrollTop();
@@ -81,21 +80,15 @@ $(document).ready(function() {
     });
   }
 
+$('.project-image').hover(function(){
+  $(this).find('.image-overlay').stop().slideDown("fast",function(){
+  });
+},function(){
+  $(this).find('.image-overlay').stop().slideUp("fast",function(){
+  });
+});
 
 
-  /*function gradientFader(){
-    var landing = $('#landing');
-    $(document).scroll(function() {
-      var scrollTop = $(this).scrollTop();
-      if(scrollTop > 100){
-        console.log("Gradient");
-        $('#landing').removeClass('sky-gradient-03)');
-        $('#landing').addClass('sky-gradient-05');
-      }
-    });
-
-  }*/
-  //gradientFader();
   smoothScroll('a');
   landingScroller();
   navScroller();
