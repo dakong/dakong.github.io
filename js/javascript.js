@@ -81,10 +81,13 @@ $(document).ready(function() {
   }
 
 $('.project-image').hover(function(){
-  $(this).find('.image-overlay').stop().slideDown("fast",function(){
+  var overlay = $(this).find('.image-overlay');
+  overlay.css('height','100%');
+  overlay.stop().slideDown("fast",function(){
   });
 },function(){
-  $(this).find('.image-overlay').stop().slideUp("fast",function(){
+  var overlay = $(this).find('.image-overlay');
+  overlay.stop().slideUp("fast",function(){
   });
 });
 

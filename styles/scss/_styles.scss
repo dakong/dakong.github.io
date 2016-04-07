@@ -87,6 +87,15 @@ nav {
     @media #{$lt-900}{
       width: 180px;
     }
+
+    @media #{$gt-1000}{
+      width: 250px;
+    }
+
+    @media #{$gt-1200}{
+      width: 300px;
+    }
+
   }
 
 }
@@ -101,6 +110,10 @@ nav {
 
   @media #{$lt-768}{
     display: none;
+  }
+
+  @media #{$gt-1000}{
+    margin-top: 2%;
   }
 
  }
@@ -244,9 +257,13 @@ nav {
     .project-image{
       width: 50%;
       margin-top: 20px;
-      float:left;
+      //float:left;
       overflow: hidden;
       position: relative;
+      @media #{$lt-768}{
+        float: none;
+        width: 100%;
+      }
 
       img{
         width: 100%;
@@ -255,8 +272,8 @@ nav {
 
       .image-overlay{
           background:rgba(0,0,0,.8);
-          height: 100%;
           width: 100%;
+          height: 100%;
           position: absolute;
           right: 0;
           top: 0;
@@ -293,8 +310,6 @@ nav {
 
     .project-description{
       width: 50%;
-      float:left;
-
       h1{
         font-size: 24px;
         color: $orange;
@@ -312,12 +327,41 @@ nav {
   .left{
     .project-description{
       padding-left: 25px;
+      float:left;
+      @media #{$lt-768}{
+        float: none;
+        width: 100%;
+        padding-left: 0;
+      }
     }
+    .project-image{
+      float:left;
+      @media #{$lt-768}{
+        float: none;
+        width: 100%;
+
+      }
+    }
+
   }
   .right{
     .project-description{
       padding-right: 25px;
+      float: right;
+      @media #{$lt-768}{
+        float: none;
+        width: 100%;
+        padding-right: 0;
+      }
     }
+    .project-image{
+      float: right;
+      @media #{$lt-768}{
+        float: none;
+        width: 100%;
+      }
+    }
+
   }
 
   .resume-button{
@@ -345,7 +389,10 @@ nav {
     }
   }
 }
-
+.fill-width-height{
+  width: 100%;
+  height: 100%;
+}
 .clearfix:after {
    content: " ";
    display: block;
