@@ -10,12 +10,14 @@ $dark-blue: #344354;
 $salmon: rgb(214, 89, 89);
 $orange: #db4c3f;
 $dark-blue2:#485565;
-// $orange: #48BA87;
 $light-gray: rgb(235, 235, 235);
 $dark-gray: rgb(150, 150, 150);
 $gray: darken($light-gray, 10%);
 $maroon: rgb(195, 15, 52);
 $black: rgb(60,60,60);
+$sky-blue: #7CA4CC;
+$sky-blue-dark: darken($sky-blue,10%);
+$white: #fafafa;
 
 /** BOX SHADOW **/
 $box-shadow: 3px 3px 4px rgba(60,60,60,0.4);
