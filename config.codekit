@@ -20,50 +20,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/background.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 413213,
-		"inputAbbreviatedPath": "\/images\/background.jpg",
-		"outputAbbreviatedPath": "\/images\/background.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/black.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6.6921e+06,
-		"inputAbbreviatedPath": "\/images\/black.jpg",
-		"outputAbbreviatedPath": "\/images\/black.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/blue.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 9.77399e+06,
-		"inputAbbreviatedPath": "\/images\/blue.jpg",
-		"outputAbbreviatedPath": "\/images\/blue.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bridge.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 141856,
-		"inputAbbreviatedPath": "\/images\/bridge.jpg",
-		"outputAbbreviatedPath": "\/images\/bridge.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/build-website.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -170,17 +126,6 @@
 		"initialSize": 29968,
 		"inputAbbreviatedPath": "\/images\/GitHub.png",
 		"outputAbbreviatedPath": "\/images\/GitHub.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/gray.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8.35438e+06,
-		"inputAbbreviatedPath": "\/images\/gray.jpg",
-		"outputAbbreviatedPath": "\/images\/gray.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -557,34 +502,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/javascript.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/javascript.min.js",
-		"outputAbbreviatedPath": "\/js\/min\/javascript.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/js\/min\/javascript-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/javascript-min.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/javascript-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/particles.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/particles.min.js",
-		"outputAbbreviatedPath": "\/js\/min\/particles.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
