@@ -119,6 +119,9 @@ nav {
         margin-left: 5px;
         margin-right: 5px; }
 
+section.nav-section {
+  padding-top: 100px !important; }
+
 #home {
   margin: 0;
   padding: 0;
