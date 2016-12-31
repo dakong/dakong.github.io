@@ -240,6 +240,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/profile-picture.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.39442e+06,
+		"inputAbbreviatedPath": "\/images\/profile-picture.png",
+		"outputAbbreviatedPath": "\/images\/profile-picture.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/profile-picture2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/profile-picture2.png",
+		"outputAbbreviatedPath": "\/images\/profile-picture2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/profile-picture3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/profile-picture3.png",
+		"outputAbbreviatedPath": "\/images\/profile-picture3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/project-photos\/bucket-app-mac.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -401,6 +434,17 @@
 		"initialSize": 153766,
 		"inputAbbreviatedPath": "\/images\/project-photos\/optimized\/virtue-vice-home.png",
 		"outputAbbreviatedPath": "\/images\/project-photos\/optimized\/virtue-vice-home.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/project-photos\/profile-picture2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.39447e+06,
+		"inputAbbreviatedPath": "\/images\/project-photos\/profile-picture2.png",
+		"outputAbbreviatedPath": "\/images\/project-photos\/profile-picture2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
