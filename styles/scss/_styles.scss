@@ -263,6 +263,16 @@ section.nav-section{
     max-width: 900px;
   }
 
+  .daily-ui-wrapper {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .daily-ui-tag {
+    text-align: center;
+  }
+
   #project-container {
     display: flex;
     flex-direction: row;
@@ -390,92 +400,6 @@ footer {
     }
   }
 }
-
-// #hamburger-btn {
-//   position: fixed;
-//   bottom: 20px;
-//   right: 20px;
-//   width: 60px;
-//   height: 60px;
-//   border-radius: 50%;
-//   background-color: $sky-blue;
-//   border: solid 1px $sky-blue-dark;
-//   box-shadow: $box-shadow;
-//   z-index: 1000;
-//   display: none;
-//   justify-content: center;
-//
-//   @media #{$lt-480} {
-//     display: flex;
-//   }
-//
-//   .hm-wrapper {
-//     align-self: center;
-//
-//     .hm {
-//       width: 30px;
-//       height: 5px;
-//       background-color: white;
-//       display: block;
-//       margin: 4px;
-//     }
-//   }
-// }
-//
-// #menu-wrapper{
-//   position:fixed;
-//   bottom: 20px;
-//   right: 60px;
-//   width: 100px;
-//   height: 120px;
-//   z-index: 1000;
-// }
-// #arrow-right{
-//   width: 0;
-//   height: 0;
-//   border-top: 15px solid transparent;
-//   border-bottom: 15px solid transparent;
-//   border-left: 15px solid $gray;;
-//   position: absolute;
-//   z-index: 1000;
-//   bottom: 21px;
-//   right: 7px;
-// }
-// #hm-menu{
-//   width: 75px;
-//   height: 95px;
-//   position: absolute;
-//   background-color: $gray;;
-//   border: solid 2px $gray;
-//   z-index: 1000;
-//   border-radius: 3px;
-//   ul{
-//
-//     font-size: 14px;
-//     text-decoration: none;
-//     list-style-type: none;
-//     margin-left:10px;
-//     padding: 0;
-//     li{
-//       margin-top: 2px;
-//       margin-bottom: 2px;
-//       display: inline-block;
-//       a{
-//         text-decoration: none;
-//         color: $dark-blue;
-//       }
-//     }
-//   }
-// }
-//
-// .show-hm-menu{
-//   display: block;
-// }
-//
-// .hide-hm-menu{
-//   display: none;
-// }
-//
 
 .fa:hover {
   text-decoration: none;

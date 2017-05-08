@@ -264,6 +264,12 @@ section.nav-section {
   height: 100%; }
   #projects .section-container {
     max-width: 900px; }
+  #projects .daily-ui-wrapper {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; }
+  #projects .daily-ui-tag {
+    text-align: center; }
   #projects #project-container {
     display: flex;
     flex-direction: row;
